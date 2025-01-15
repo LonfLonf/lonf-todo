@@ -1,0 +1,153 @@
+﻿@page "/"
+
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@rendermode RenderMode.InteractiveServer
+@inject IJSRuntime JSRuntime
+@using TodoBlazor.Enums
+@using TodoBlazor.Models
+
+<PageTitle>Home</PageTitle>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+
+    <div class="container">
+        <h1 class="text-center mb-4">Todo List</h1>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add Task
+        </button>
+
+        <div class="list-group mt-4">
+            @foreach (var task in TaskItems.OrderByDescending(t => t.Difficulty))
+            {
+                <a class="list-group-item list-group-item-action"
+                    style="background-color: @(task.IsComplete ? "#d4edda" : "#d9d9d9"); color: @(task.IsComplete ? "#155724" : "#191919"); margin-bottom: 4px;">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">@task.Title</h5>
+                        <div class="button-checkbox-container">
+                            <label for="myCheckbox">
+                                <input type="checkbox" id="myCheckbox" name="myCheckbox" @onclick="() => MarkTask(task.Id)"
+                                    checked="@task.IsComplete">
+                            </label>
+                            <button type="button" class="btn-close" aria-label="Close"
+                                @onclick="() => RemoveTask(task.Id)"></button>
+                        </div>
+                    </div>
+                    <p class="mb-1">@task.Description</p>
+                    <small class="text-body-secondary">@task.Difficulty</small>
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Task Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputTitle" class="form-label">Title</label>
+                        <input type="email" class="form-control" id="inputEmail4" @bind="Title" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputDescription" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="inputPassword4" @bind="Description" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputDifficulty" class="form-label">Difficulty</label>
+                        <select id="inputState" class="form-select" @bind="Difficulty">
+                            <option value="1">Easy</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Hard</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="AddTask">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code
+{
+    public string Title = String.Empty;
+    public string Description = String.Empty;
+    public int Difficulty = 1;
+    public bool IsComplete = false;
+
+    public List<Todo> TaskItems = new List<Todo>();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var taskItems = await localStorage.GetItemAsync<List<Todo>>("TaskItems");
+            if (taskItems != null)
+            {
+                TaskItems = taskItems;
+                StateHasChanged();
+            }
+        }
+    }
+
+    private async Task AddTask()
+    {
+        if (!string.IsNullOrEmpty(Title) && !string.IsNullOrEmpty(Description))
+        {
+            var newTodo = new Todo
+                {
+                    Id = TaskItems.Count + 1,
+                    Title = Title,
+                    Description = Description,
+                    Difficulty = (TodoDifficulty)Difficulty,
+                    IsComplete = false
+                };
+            TaskItems.Add(newTodo);
+            await localStorage.SetItemAsync("TaskItems", TaskItems);
+
+            Title = String.Empty;
+            Description = String.Empty;
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task RemoveTask(int id)
+    {
+        var task = TaskItems.FirstOrDefault(x => x.Id == id);
+        if (task != null)
+        {
+            TaskItems.Remove(task);
+            await localStorage.SetItemAsync("TaskItems", TaskItems);
+        }
+
+        StateHasChanged();
+    }
+
+    private async Task MarkTask(int id)
+    {
+        var task = TaskItems.FirstOrDefault(x => x.Id == id);
+        if (task != null)
+        {
+            task.IsComplete = !task.IsComplete;
+            await localStorage.SetItemAsync("TaskItems", TaskItems);
+            StateHasChanged();
+        }
+    }
+}
