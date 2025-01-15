@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YkSbVtqCnH3VAPJilVdiGQtYmRhnpAODOYUbZKRJkCM=",
+  "Hash": "V0kYnrW51iQx+DBRg2+dZrGV4cMdZLrd9jfaZ2FKRjg=",
   "Source": "TodoBlazor",
   "BasePath": "_content/TodoBlazor",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Identity": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -56,7 +56,7 @@
       "Integrity": "tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\QuickGrid.razor.js"
     },
     {
       "Identity": "C:\\Users\\firey\\Todo\\TodoBlazor\\obj\\Release\\net9.0\\compressed\\0b6b6i4wzw-lcd1t2u6c8.gz",
@@ -217,14 +217,14 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "RelatedAsset": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "izrngo8qdo",
       "Integrity": "bl1Sll6BsS4llCzjKcNcHMwzxdPETwjAAvYwJAQ73Vc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\firey\\Todo\\TodoBlazor\\obj\\Release\\net9.0\\compressed\\3xnxvxe7v7-h1s4sie4z3.gz",
@@ -952,14 +952,14 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "RelatedAsset": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\QuickGrid.razor.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "p4818tnj3t",
       "Integrity": "l1TN0xlzfmCvoE1j6NfscfK49JNKk0yWC8evKQzqR0w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\QuickGrid.razor.js"
     },
     {
       "Identity": "C:\\Users\\firey\\Todo\\TodoBlazor\\obj\\Release\\net9.0\\compressed\\v1qimvs0if-k8d9w2qqmf.gz",
@@ -2099,7 +2099,7 @@
   "Endpoints": [
     {
       "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
-      "AssetFile": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetFile": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2124,7 +2124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:29:35 GMT"
+          "Value": "Wed, 11 Dec 2024 06:30:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2165,7 +2165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:29:34 GMT"
+          "Value": "Wed, 11 Dec 2024 06:30:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2189,7 +2189,7 @@
     },
     {
       "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
-      "AssetFile": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetFile": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2214,7 +2214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:29:35 GMT"
+          "Value": "Wed, 11 Dec 2024 06:30:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2249,7 +2249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:29:34 GMT"
+          "Value": "Wed, 11 Dec 2024 06:30:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2281,7 +2281,7 @@
     },
     {
       "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
-      "AssetFile": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "AssetFile": "C:\\Users\\firey\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.1\\staticwebassets\\QuickGrid.razor.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2306,7 +2306,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:06:47 GMT"
+          "Value": "Wed, 11 Dec 2024 06:08:57 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2345,7 +2345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:06:46 GMT"
+          "Value": "Wed, 11 Dec 2024 06:08:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2402,7 +2402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Oct 2024 13:06:46 GMT"
+          "Value": "Wed, 11 Dec 2024 06:08:56 GMT"
         },
         {
           "Name": "Cache-Control",
